@@ -142,3 +142,55 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Nova seção de participantes */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+  color: #444;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a237e;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(26,35,126,0.03), rgba(0,0,0,0));
+  font-size: 14px;
+  color: #203040;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Um (pequeno) "bullet" visual à esquerda de cada participante */
+.participants-list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1a237e;
+  opacity: 0.9;
+  display: inline-block;
+}
+
+/* Mensagem quando não há participantes */
+.no-participants {
+  font-style: italic;
+  color: #666;
+  margin: 6px 0 0 0;
+}
