@@ -177,10 +177,9 @@ footer {
   border: 1px solid rgba(0,0,0,0.04);
 }
 
-/* Pequeno "bullet" visual */
+/* Ocultar o bullet visual (solicitado) */
 .participants-list li::before {
   display: none;
-  position: relative;
 }
 
 .delete-participant {
@@ -196,7 +195,6 @@ footer {
 }
 .delete-participant:hover {
   background: #ffeaea;
-}
 }
 
 /* Mensagem quando não há participantes */
