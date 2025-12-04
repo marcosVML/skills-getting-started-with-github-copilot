@@ -143,7 +143,7 @@ footer {
   color: #666;
 }
 
-/* Nova seção de participantes */
+/* Seção de participantes */
 .participants {
   margin-top: 12px;
   padding-top: 10px;
@@ -177,15 +177,24 @@ footer {
   border: 1px solid rgba(0,0,0,0.04);
 }
 
-/* Um (pequeno) "bullet" visual à esquerda de cada participante */
+/* Ocultar o bullet visual (solicitado) */
 .participants-list li::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #1a237e;
-  opacity: 0.9;
-  display: inline-block;
+  display: none;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.delete-participant:hover {
+  background: #ffeaea;
 }
 
 /* Mensagem quando não há participantes */
